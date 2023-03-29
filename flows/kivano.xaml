@@ -1,0 +1,161 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="enter_kg" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_productName" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1794,1457</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>enter_kg_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="60">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="enter_kg" sap:VirtualizedContainerService.HintSize="556,1392" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Firefox: Интернет-магазин Kivano.kg, Бишкек, Кыргызстан — низкие цены на товары с беспла" sap:VirtualizedContainerService.HintSize="514,1300" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="1660ee0e-2715-40f6-ac10-7ce8d2cb6fd9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="480,1084" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="productName" />
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="438,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1660ee0e-2715-40f6-ac10-7ce8d2cb6fd9" Text="[in_productName]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.kivano.kg/" DesignTimeRectangle="883, 154, 234, 27" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control js_search_input' aaname='' /&gt;" Guid="53316471-9e39-4d92-a658-0b07a20b2e43" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAO4AAAAfCAYAAADgIPGeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGdSURBVHhe7dPBjoJAEEXR/v9/dDuCqAg4A0ZjTz3bNt0TZl8k9yaPVIDtCd34FRlj2xpwGdvgwtEeeU27j7vdjjHmbLJZWjW4erF/fWiaJg7DEMdxZIw5mUzKZsKb9oEr1dM0xXme4+12Y4w5mUzKpox+4J6mfdT0Uj88Ho/4fD4ZY04mk7Ipo9mrwW3saF4vpVs/EpGfZFI2E9zkFbhEzluFe57aqAGXyGcl3OwVuETOW4d7tcMGXCKfVXDfXg3uwY4DcImcVsNNXkNvDw24RD4r4WavBrezowMukdNquMkrcImctwr38t1FDbhEPivhZq8G92jHEbhETqvhJq/AJXLeKtzBHhpwiXxWws1eDe7JjhNwiZxWw01ew/Bjhw24RD6r4L69GtyzHWfgEjmthpu8htEeGnCJfFbCzV6BS+S8f+D2dvTAJXJaDTd5DdPcRw24RD4r4WavFdxlWYBL5CyZlM0/cC92XGJ7aGPbtvF+v79+ZIz5mEzKpoxmr+Fqjzx9kGrGmK/JZmnV4A52MMa2tHBd7GCMbWhD/AX/EBWwjvtFNQAAAABJRU5ErkJggg==" InformativeScreenshot="56b33eb33883b2e9bbaeaafef01c7e7f.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Интернет-магазин Kivano.kg, Бишкек, Кыргызстан — низкие цены на товары с бесплатной доставкой в течение дня' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Найти'" sap:VirtualizedContainerService.HintSize="438,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1660ee0e-2715-40f6-ac10-7ce8d2cb6fd9" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.kivano.kg/" DesignTimeRectangle="1123, 154, 73, 27" ElementType="Button" FriendlyName="'Найти'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-success btn-sm btn_search' aaname='Найти' check:innerText='Найти' /&gt;" Guid="8a882144-2080-4e7f-a463-c39718c95dfd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAfCAYAAACiT0BMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPxSURBVGhD7dfvb1NVHMfx/lMqgqKibCAqRo0/HuATEh8QNYEMFucEYeqCTIdhjhD8EXQYA3RlHQvonDqVdavEEDNYnHtA3Pq7vXft2umzj9/PObeut7m3oDlZfHBu8m7uOfd7m/aV0o5IoZKG7d9l0f5DkaI8sPzyIvrGd+HVs3fbmqILfepWgpaRjRR6Lu/EG6Nt+PSXV3Dm+l6bFz3oQh860Uuh5dwlJXoquRsfTL+A44nnbF70oAt96KTQSisZZJ0/1ObxxPPon3rW1hRd6EMneglaFpnSotp8/+oztpDoQyd6+dD6fnraFpIPzVnJIVvS32nHfnzqf9Tj6BragV45741vRdeVoJn1iz50opcP7d0fnjTTxHZ0nG7DkTvdD2wQC9Uo+k8/iP65FBbmg2bWLz9aVdAcjXZ0cqeZfo6hgCRG73Q/pKGlNNSxGsdQwPX1TKGJE70ELf8PWu93T5gpqXHit9v/uh37Tm3Gy16dlxr3t+KQN9cT2yLXud6OzoZ51Zl29ITOe89noDW0PCKuPOQ8tHe+fcxMM8OCM4N4y/1tOBC7gKL+LKnj5uTDOBgw9+GvS3KV6wEs6NG1Y3UEn4XOc20m+tCJXoJWkEVKbb49scNM03wTCXxx8j7saSx2Dnl5MyNq7oQApJG85t1zLSaA3jV1vz4/HO3DnNKp3+e/3rwOnDeQRksJWsGP9tY3j5opwTcRdszgYsNs99lN2DPIjmK2fk3dz/M2DNxI4fdb9XXj8wetQ+YN5ENbrhWQdzXakfFtZkpE5UVPI9Zy/xHsG9yIc1nPUh3eNW8uev4Y5qoxfNL8fCHr0HkD0YdO9BK0oizSavOwfKEaaeqC/DOUF91qf+w93BCm3242XksgOlY/n8LE7BLmeb35+QLXLeYNpNHSglb0o735VZuZrvJFJzDcal++vEty/vnABrzERs/Lp2MRk9/X5+SoDuPj5vtC1y3mDeRDK8tDwUM7dEV+pk0kX8wl/mlxm/2PbqX4VvVRS2K+BszP1ue884D7gtct5g1EHzrRS9BKssiozYOX5SffFphGywhaSdBWBW1Zo3WPbbGFpNDEiV6C5sgiqzZfv/SQLSSNlhU0B5GKPBQ9tK7RB2wh0YdO9PKhvRbfbAupCc2VRU5tdo7cbwtJo+UEzUVk5U8XpbJGO3Bxky0k+tCJXmtoQ3dh//C92B/baGtOXOjTgLYMp1JA90g79n55DzqiG9AhQzYv8aALfehEr0hVHspV+VvNyaBv/EX1MbT5owt96EQvQSujUnPhVuS/U04WuUIa2XzK5kUPutCHTvSKVP8qg/FXoVxz4K4U1cfQpqMHXeijrcr4G2cj/iV3rHmOAAAAAElFTkSuQmCC" InformativeScreenshot="ff7f92b1713714e9b916e6f13c8818cb.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Интернет-магазин Kivano.kg, Бишкек, Кыргызстан — низкие цены на товары с бесплатной доставкой в течение дня' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,383" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='наименование продукта'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='ссылка на продукт'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Цена'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='strong' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='strong' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" ScopeIdentifier="1660ee0e-2715-40f6-ac10-7ce8d2cb6fd9" Version="V1">
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="675, 317, 775, 866" FriendlyName="'Ноутбук Gigabyte'" FullSelectorArgument="&lt;webctrl id='w0' tag='DIV' /&gt;" Guid="f776d5fd-4f66-42a1-bcd2-6e892a58ebc8" InformativeScreenshot="5957fe921a003243b140f7768900a80b.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Поиск «rtx 3070» на Kivano.KG' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                </uix:NExtractData>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,121" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[exception.Message]" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="438,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="kivano" WorkbookPath="list.xlsx" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Firefox" IconBase64="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" InformativeScreenshot="a108ae1e2032661373d41755f908544a.png" Selector="&lt;html app='firefox.exe' title='Интернет-магазин Kivano.kg, Бишкек, Кыргызстан — низкие цены на товары с бесплатной доставкой в течение дня' /&gt;" Url="https://www.kivano.kg/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
